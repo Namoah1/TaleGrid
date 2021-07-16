@@ -16,6 +16,9 @@
 		62FE6769269FDF7800AB2C31 /* TaleGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE6768269FDF7800AB2C31 /* TaleGridUITests.swift */; };
 		62FE677D269FE38100AB2C31 /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62FE677B269FE38100AB2C31 /* Karla-VariableFont_wght.ttf */; };
 		62FE677E269FE38100AB2C31 /* Karla-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62FE677C269FE38100AB2C31 /* Karla-Italic-VariableFont_wght.ttf */; };
+		62FE678026A1393A00AB2C31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE677F26A1393A00AB2C31 /* HomeViewController.swift */; };
+		62FE678226A1399A00AB2C31 /* FreeWhiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE678126A1399A00AB2C31 /* FreeWhiteViewController.swift */; };
+		62FE678426A13A2300AB2C31 /* ScriptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE678326A13A2300AB2C31 /* ScriptsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		62FE676A269FDF7800AB2C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62FE677B269FE38100AB2C31 /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		62FE677C269FE38100AB2C31 /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		62FE677F26A1393A00AB2C31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		62FE678126A1399A00AB2C31 /* FreeWhiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeWhiteViewController.swift; sourceTree = "<group>"; };
+		62FE678326A13A2300AB2C31 /* ScriptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 			children = (
 				62FE6746269FDF6E00AB2C31 /* AppDelegate.swift */,
 				62FE6748269FDF6E00AB2C31 /* SceneDelegate.swift */,
+				62FE677F26A1393A00AB2C31 /* HomeViewController.swift */,
+				62FE678126A1399A00AB2C31 /* FreeWhiteViewController.swift */,
+				62FE678326A13A2300AB2C31 /* ScriptsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +306,9 @@
 			files = (
 				62FE6747269FDF6E00AB2C31 /* AppDelegate.swift in Sources */,
 				62FE6749269FDF6E00AB2C31 /* SceneDelegate.swift in Sources */,
+				62FE678426A13A2300AB2C31 /* ScriptsViewController.swift in Sources */,
+				62FE678226A1399A00AB2C31 /* FreeWhiteViewController.swift in Sources */,
+				62FE678026A1393A00AB2C31 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

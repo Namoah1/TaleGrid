@@ -11,7 +11,7 @@
         <!--Your Scripts-->
         <scene sceneID="9BN-Uw-kbi">
             <objects>
-                <viewController id="7eC-XE-829" sceneMemberID="viewController">
+                <viewController id="7eC-XE-829" customClass="ScriptsViewController" customModule="TaleGrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UNx-LC-hjp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
         <!--Free Write-->
         <scene sceneID="0zD-Cz-AEb">
             <objects>
-                <viewController id="6nm-Xb-D5f" sceneMemberID="viewController">
+                <viewController id="6nm-Xb-D5f" customClass="FreeWhiteViewController" customModule="TaleGrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEt-ZM-6hE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
         <!--Home-->
         <scene sceneID="FPp-dc-LJ4">
             <objects>
-                <viewController id="zqY-8Y-0Eu" sceneMemberID="viewController">
+                <viewController id="zqY-8Y-0Eu" customClass="HomeViewController" customModule="TaleGrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SOl-oD-bVP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
