@@ -79,9 +79,27 @@
                                                     <rect key="frame" x="40" y="31" width="334" height="138"/>
                                                     <color key="backgroundColor" red="0.56470588239999997" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Prompt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajw-Ct-4rX">
+                                                    <rect key="frame" x="60" y="51" width="119" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have had enough. Get out of my sight, right now..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-vU-FIg">
+                                                    <rect key="frame" x="60" y="106" width="304" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="kfA-vU-FIg" firstAttribute="leading" secondItem="b4c-Ro-VvS" secondAttribute="leadingMargin" constant="40" id="25W-Pj-OXN"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ajw-Ct-4rX" secondAttribute="trailing" constant="20" symbolic="YES" id="5dd-Yd-xJy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kfA-vU-FIg" secondAttribute="trailing" constant="30" id="7RH-xD-9DX"/>
                                                 <constraint firstItem="fNG-de-Hmf" firstAttribute="top" secondItem="b4c-Ro-VvS" secondAttribute="topMargin" constant="20" id="FAH-Ft-gP1"/>
+                                                <constraint firstItem="Ajw-Ct-4rX" firstAttribute="top" secondItem="b4c-Ro-VvS" secondAttribute="topMargin" constant="40" id="GaH-5P-OAk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kfA-vU-FIg" secondAttribute="bottom" constant="40" id="PTl-gk-Idf"/>
+                                                <constraint firstItem="Ajw-Ct-4rX" firstAttribute="leading" secondItem="b4c-Ro-VvS" secondAttribute="leadingMargin" constant="40" id="XAH-uj-5AI"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="fNG-de-Hmf" secondAttribute="trailing" constant="20" id="lUr-hB-uo7"/>
                                                 <constraint firstItem="fNG-de-Hmf" firstAttribute="leading" secondItem="b4c-Ro-VvS" secondAttribute="leadingMargin" constant="20" id="pMR-7I-4qU"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="fNG-de-Hmf" secondAttribute="bottom" constant="20" id="xO4-U9-wPm"/>
@@ -99,19 +117,20 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sdM-QP-ZKx">
-                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="itemSize" width="171" height="172"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fFm-5H-aEe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PromptCollectionCell" id="fFm-5H-aEe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="172"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BMj-k1-2Gb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="171" height="172"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </collectionViewCellContentView>
+                                                            <size key="customSize" width="171" height="172"/>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -143,6 +162,9 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Q8y-b8-HaF">
                         <color key="badgeColor" red="0.56470588239999997" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="promptsTableView" destination="GjK-BX-NQ1" id="1ZP-C3-Eiq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PR9-lA-wqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
