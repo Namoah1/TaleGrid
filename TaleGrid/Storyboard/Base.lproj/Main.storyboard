@@ -5,8 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Karla-VariableFont_wght.ttf">
+            <string>Karla-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Your Scripts-->
         <scene sceneID="9BN-Uw-kbi">
@@ -51,8 +57,88 @@
                     <view key="view" contentMode="scaleToFill" id="SOl-oD-bVP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get some writing done!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB9-cw-G9z">
+                                <rect key="frame" x="35.5" y="69" width="343" height="32"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GjK-BX-NQ1">
+                                <rect key="frame" x="0.0" y="121" width="414" height="692"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayPrompt" rowHeight="200" id="Mef-Yz-wef">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mef-Yz-wef" id="b4c-Ro-VvS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNG-de-Hmf">
+                                                    <rect key="frame" x="40" y="31" width="334" height="138"/>
+                                                    <color key="backgroundColor" red="0.56470588239999997" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fNG-de-Hmf" firstAttribute="top" secondItem="b4c-Ro-VvS" secondAttribute="topMargin" constant="20" id="FAH-Ft-gP1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fNG-de-Hmf" secondAttribute="trailing" constant="20" id="lUr-hB-uo7"/>
+                                                <constraint firstItem="fNG-de-Hmf" firstAttribute="leading" secondItem="b4c-Ro-VvS" secondAttribute="leadingMargin" constant="20" id="pMR-7I-4qU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fNG-de-Hmf" secondAttribute="bottom" constant="20" id="xO4-U9-wPm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExistingPrompts" rowHeight="200" id="fMR-WO-Dit">
+                                        <rect key="frame" x="0.0" y="224.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fMR-WO-Dit" id="PZB-bx-xqS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="paT-py-glq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sdM-QP-ZKx">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fFm-5H-aEe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BMj-k1-2Gb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </collectionViewCellContentView>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="paT-py-glq" firstAttribute="leading" secondItem="PZB-bx-xqS" secondAttribute="leading" id="Alp-Kb-DV5"/>
+                                                <constraint firstAttribute="bottom" secondItem="paT-py-glq" secondAttribute="bottom" id="OY5-1P-BiW"/>
+                                                <constraint firstAttribute="trailing" secondItem="paT-py-glq" secondAttribute="trailing" id="mf7-we-mzq"/>
+                                                <constraint firstItem="paT-py-glq" firstAttribute="top" secondItem="PZB-bx-xqS" secondAttribute="top" id="x5A-Nz-yVC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BOI-Re-NHZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GjK-BX-NQ1" firstAttribute="leading" secondItem="BOI-Re-NHZ" secondAttribute="leading" id="1QZ-sE-0L7"/>
+                            <constraint firstItem="BOI-Re-NHZ" firstAttribute="bottom" secondItem="GjK-BX-NQ1" secondAttribute="bottom" id="2TI-kI-DlV"/>
+                            <constraint firstItem="nB9-cw-G9z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BOI-Re-NHZ" secondAttribute="leading" id="4nH-a8-cK6"/>
+                            <constraint firstItem="BOI-Re-NHZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nB9-cw-G9z" secondAttribute="trailing" id="Bb5-VR-ETk"/>
+                            <constraint firstItem="BOI-Re-NHZ" firstAttribute="trailing" secondItem="GjK-BX-NQ1" secondAttribute="trailing" id="maQ-SL-qr8"/>
+                            <constraint firstItem="nB9-cw-G9z" firstAttribute="centerX" secondItem="SOl-oD-bVP" secondAttribute="centerX" id="pRs-rH-cjV"/>
+                            <constraint firstItem="nB9-cw-G9z" firstAttribute="top" secondItem="BOI-Re-NHZ" secondAttribute="top" constant="25" id="uut-tZ-faP"/>
+                            <constraint firstItem="GjK-BX-NQ1" firstAttribute="top" secondItem="nB9-cw-G9z" secondAttribute="bottom" constant="20" id="z9s-Be-J9z"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Q8y-b8-HaF">
                         <color key="badgeColor" red="0.56470588239999997" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PR9-lA-wqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="-934"/>
+            <point key="canvasLocation" x="340.57971014492756" y="-934.15178571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ksI-qa-IoY">
