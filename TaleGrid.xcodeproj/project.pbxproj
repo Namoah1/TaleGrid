@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F10ACC26A6844A00D6CDF3 /* HomePromptCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F10ACB26A6844A00D6CDF3 /* HomePromptCellTableViewCell.swift */; };
 		62FE6747269FDF6E00AB2C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE6746269FDF6E00AB2C31 /* AppDelegate.swift */; };
 		62FE6749269FDF6E00AB2C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE6748269FDF6E00AB2C31 /* SceneDelegate.swift */; };
 		62FE674E269FDF6E00AB2C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FE674C269FDF6E00AB2C31 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62F10ACB26A6844A00D6CDF3 /* HomePromptCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromptCellTableViewCell.swift; sourceTree = "<group>"; };
 		62FE6743269FDF6E00AB2C31 /* TaleGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaleGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FE6746269FDF6E00AB2C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62FE6748269FDF6E00AB2C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				62FE6746269FDF6E00AB2C31 /* AppDelegate.swift */,
 				62FE6748269FDF6E00AB2C31 /* SceneDelegate.swift */,
+				62F10ACB26A6844A00D6CDF3 /* HomePromptCellTableViewCell.swift */,
 				62FE677F26A1393A00AB2C31 /* HomeViewController.swift */,
 				62FE678126A1399A00AB2C31 /* FreeWhiteViewController.swift */,
 				62FE678326A13A2300AB2C31 /* ScriptsViewController.swift */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F10ACC26A6844A00D6CDF3 /* HomePromptCellTableViewCell.swift in Sources */,
 				62FE6747269FDF6E00AB2C31 /* AppDelegate.swift in Sources */,
 				62FE6749269FDF6E00AB2C31 /* SceneDelegate.swift in Sources */,
 				62FE678426A13A2300AB2C31 /* ScriptsViewController.swift in Sources */,

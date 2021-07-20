@@ -7,18 +7,16 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var promptsTableView: UITableView!
-    
-
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+    
     
 
     
