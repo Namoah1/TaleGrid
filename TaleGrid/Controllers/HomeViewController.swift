@@ -11,6 +11,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     
     @IBOutlet weak var promptsTableView: UITableView!
+    let prompts = getPrompt()
     
     
     override func viewDidLoad() {
@@ -22,16 +23,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return prompts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TodayPrompt") as? HomePromptTableViewCell {
-            cell.todaysPromptLabel.text = "Hello"
+            let todayPrompt = prompts[indexPath.row]
+            cell.todaysPromptLabel.text = todayPrompt.prompt
+            cell.todaysPromptWriterLabel.text = "Today's Prompt by: " + todayPrompt.author
             return cell
         } else {
             return UITableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
 
     
