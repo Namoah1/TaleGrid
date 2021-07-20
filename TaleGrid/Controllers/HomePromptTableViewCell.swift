@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomePromptCellTableViewCell: UITableViewCell {
+class HomePromptTableViewCell: UITableViewCell {
     
     @IBOutlet weak var todaysPromptWriterLabel: UILabel!
     @IBOutlet weak var todaysPromptLabel: UILabel!
